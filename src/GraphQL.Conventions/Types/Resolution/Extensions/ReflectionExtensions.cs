@@ -64,6 +64,7 @@ namespace GraphQL.Conventions.Types.Resolution.Extensions
             return type.IsGenericType(typeof(List<>)) ||
                    type.IsGenericType(typeof(IList<>)) ||
                    type.IsGenericType(typeof(IEnumerable<>)) ||
+                   type.IsGenericType(typeof(ICollection<>)) ||
                    type.IsArray;
         }
 
